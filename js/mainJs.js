@@ -1,8 +1,7 @@
 ﻿// Fetch content from the HomeContent.html file
-fetch('HomeContent.html')
+fetch('homeContent.html')
     .then(response => response.text())
     .then(data => {
-        // Insert the content into the contentContainer
         document.getElementById('homeContentContainer').innerHTML = data;
     })
     .catch(error => console.error('Error fetching content:', error));
